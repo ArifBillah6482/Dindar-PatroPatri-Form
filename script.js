@@ -246,6 +246,48 @@ function PostData() {
     .catch((err) => {
       console.log(err);
     });
+  ///////////
+  //////////
+  set(ref(db, "Data/" + id), {
+    Time: new Date().toLocaleString(),
+    id: id,
+    পাত্র_পাত্রী: patroPatriValue,
+    নাম: nameValue,
+    বয়স: ageValue,
+    উচ্চতা: heightValue,
+    ওজন: weightValue,
+    গায়ের_রং: gayerRongValue,
+    বৈবাহিক_অবস্থা: boibahicObosthaValue,
+    বিভাগ: bivagValue,
+    স্হায়ী_ঠিকানা: sthaiThikanaValue,
+    বর্তমানঠিকানা: bortomanThikanaValue,
+    পেশা: peshaValue,
+    মাসিকইনকাম: monthSalaryValue,
+    শিক্ষাগতযোগ্যতা: classValue,
+    বাবারপেশা: babarPeshaValue,
+    মায়েরপেশা: mayerPeshaValue,
+    আপনিকি_নিওমিত_নামাজপড়েন: namazPoreKinaValue,
+    আপনিকি_কুরআান_পড়তে_যানেন: quranPareKinaValue,
+    আপনিকি_সন্তানআছে_এমন_কাউকে_বিবাহকরতেচান:
+      apniKiSontanAseEmonKawKBiyeKorteChanValue,
+    আপনারকিশারিরিকঅঙ্গহানিবাবড়োকোনোরোগআছে: sharirikOngohaniAseKinaValue,
+    আপনারকিসুন্নতিদারিআছে: dariAseKinaValue,
+    আপনিকিপর্দাকরেন: pordaKoreKinaValue,
+    দ্বিনদারপাত্রপাত্রীসন্ধানপেজেআপনিকিধরনেরজীবনসঙ্গীচান:
+      jmonJannatiSathiChaiValue,
+    পাএপাএীবয়স: patroPatrirBoyosValue,
+    পাত্রপাত্রীউচ্চতা: patroPatrirHeightValue,
+    পাত্রপাত্রীগায়েররং: patroPatrirGayerRongValue,
+    পাএপাএীলেখাপড়া: patroPatrirLekhaporaValue,
+    এস্ট্রাকিছু: extraKisuLekhaValue,
+    মোবাইল: phoneNumberValue,
+    এফবিআইডিলিংক: FBIdLinkValue,
+    আমাদেরসেবা: amaderShebatiKmnLagloValue,
+  })
+    .then(() => console.log())
+    .catch((err) => {
+      console.log(err);
+    });
 }
 //////////////////
 Form.addEventListener("submit", (e) => {
