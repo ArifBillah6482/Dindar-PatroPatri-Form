@@ -203,7 +203,10 @@ function PostData() {
   let id5 = Math.floor(Math.random() * 199);
   //////////////////
   let id = id1 + "" + id2 + "" + id3 + "" + id4 + "" + id5;
-  set(ref(db, "PendingBiodata/" + id), {
+  let fileName1 = nameValue.split(/\W/g);
+  let fileName2 = phoneNumberValue.split(/\D/g);
+  let fileName = fileName1 + "" + fileName2;
+  set(ref(db, "PendingBiodata/" + fileName), {
     Time: new Date().toLocaleString(),
     id: id,
     পাত্র_পাত্রী: patroPatriValue,
@@ -248,7 +251,7 @@ function PostData() {
     });
   ///////////
   //////////
-  set(ref(db, "Data/" + id), {
+  set(ref(db, "Data/" + fileName), {
     Time: new Date().toLocaleString(),
     id: id,
     পাত্র_পাত্রী: patroPatriValue,
