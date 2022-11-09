@@ -243,8 +243,9 @@ function PostData() {
     আমাদেরসেবা: amaderShebatiKmnLagloValue,
   })
     .then(() => {
-      alert("আপনার তথ্য পাঠানো হয়েছে।");
       alertTag.textContent = "আপনার তথ্য পাঠানো হয়েছে।";
+      alert(`আপনার তথ্য পাঠানো হয়েছে। আমাদের ফেসবুক পেইজে গিয়ে আপনার "নাম" লিখে মেসেজ দিতে "ok" বাটনে ক্লিক করুন।`);    
+     window.location = "https://www.facebook.com/DeendarPatraPatriPandhan";
     })
     .catch((err) => {
       console.log(err);
