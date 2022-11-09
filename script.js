@@ -244,7 +244,7 @@ function PostData() {
   })
     .then(() => {
       alertTag.textContent = "আপনার তথ্য পাঠানো হয়েছে।";
-      alert(`আপনার তথ্য পাঠানো হয়েছে। আমাদের ফেসবুক পেইজে গিয়ে আপনার "নাম" লিখে মেসেজ দিতে "ok" বাটনে ক্লিক করুন।`);    
+      alert(`আপনার তথ্য পাঠানো হয়েছে। আমাদের ফেসবুক পেইজে মেসেজ দিতে "OK" বাটনে ক্লিক করুন।`);    
      window.location = "https://www.facebook.com/DeendarPatraPatriPandhan";
     })
     .catch((err) => {
